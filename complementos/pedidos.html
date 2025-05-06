@@ -1,14 +1,94 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Software Diablos Burgers</title>
-    <link rel="stylesheet" href="../style/" />
-    <link rel="icon" type="image/png" href="../img/logo.png" />
-    <title>Document</title>
+    <title>Pedidos</title>
+    <link rel="stylesheet" href="../style/corte.css" />
   </head>
   <body>
-    <h1>sa</h1>
+
+    <!-- Tabla con informacion general -->
+    <table>
+      <tr>
+        <th colspan="4" style="text-align: center">Datos Generales</th>
+      </tr>
+      <tr style="text-align: center">
+        <td colspan="2">Emite corte de caja</td>
+        <td colspan="2"><input type="text" placeholder="Nombre Cajer@" /></td>
+      </tr>
+      <tr>
+        <td>FECHA:</td>
+        <td><span id="fecha-actual"></span></td>
+        <td>HORA:</td>
+        <td><span id="hora-actual"></span></td>
+      </tr>
+      <tr>
+        <td>CAJA (inicio de turno):</td>
+        <td>$2,800.00</td>
+        <td>CAJA (final de turno):</td>
+        <td>$2,607.00</td>
+      </tr>
+    </table>
+
+    <!-- Tabla de gastos -->
+    <table>
+      <tr>
+        <th colspan="2" style="text-align: center">Desglose de los Gastos</th>
+      </tr>
+      <tr>
+        <td>Gasto realizado</td>
+        <td>Total Gastado</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+      </tr>
+      <td colspan="2">
+        <button>Agregar gasto</button> <button>Eliminar Gasto</button>
+      </td>
+    </table>
+
+    <!-- Tabla que incluye todas las ventas -->
+    <table>
+      <tr>
+        <th colspan="6" style="text-align: center">Datos de las Ventas</th>
+      </tr>
+      <tr>
+        <td>Pago con efectivo</td>
+        <td>$0.00</td>
+        <td>Pago con tarjeta</td>
+        <td>$0.00</td>
+        <td>Pago con transferencia</td>
+        <td>$0.00</td>
+      </tr>
+    </table>
+
+    <!-- Tablas de las ventas descritas -->
+    <table>
+      <tr>
+        <th colspan="5" style="text-align: center">Datos de las Ventas</th>
+      </tr>
+      <tr>
+        <td>No. de venta</td>
+        <td>Contenido de la orden</td>
+        <td>Metodo de pago</td>
+        <td>Total</td>
+        <td>Hora</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Total</td>
+        <td></td>
+      </tr>
+    </table>
+
+    <div class="footer"></div>
+    <script src="../js/fecha_hora.js"></script>
   </body>
 </html>
