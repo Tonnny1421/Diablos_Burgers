@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>POS Restaurante - Prototipo</title>
+  <link rel="stylesheet" href="ventas.css">
+  <link rel="icon" type="image/png" href="../img/logo.png">
+</head>
+<body>
+  <header>
+    <h2>CAPTURE EL PEDIDO</h2>
+  </header>
+  <div class="main">
+    <div class="left-panel">
+      <div>
+        <textarea class="display" id="display" rows="6" readonly></textarea>
+      </div>
+      <div class="controls">
+        <button>Nota</button>
+      </div>
+      <button class="pago">Pago →</button>
+    </div>
+    <div class="right-panel">
+      <h2>Seleccionar Producto</h2>
+      <div class="product-grid">
+        <div class="product">
+          <img src="../img/arr_bg.jpg" alt="Hamburguesa arrachera">
+          <p>Hamburguesa arrachera $130</p>
+          <button class="agregar">agregar</button>
+          <button class="borrar">eliminar</button>
+        </div>
+        <div class="product">
+          <img src="../img/diab_bg.jpg" alt="Hamburguesa Diabla">
+          <p>Hamburguesa Diabla <br>$110</p>
+          <button class="agregar">agregar</button>
+          <button class="borrar">eliminar</button>
+        </div>
+        <div class="product">
+          <img src="../img/past.tt.jpg" alt="Torta Pastor">
+          <p>Torta Pastor <br>$95</p>
+          <button class="agregar">agregar</button>
+          <button class="borrar">eliminar</button>
+        </div>
+        <div class="product">
+          <img src="../img/torr.jpg" alt="Torito">
+          <p>Torito <br>$30</p>
+          <button class="agregar">agregar</button>
+          <button class="borrar">eliminar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="ventas.js"></script>
+  <dialog id="dialogo-pago">
+    <form method="dialog">
+      <h3>Total a pagar: <span id="monto-total"></span></h3>
+      <label for="metodo">Método de pago:</label>
+      <select id="metodo-pago" required>
+        <option value="efectivo">Efectivo</option>
+        <option value="tarjeta">Tarjeta</option>
+        <option value="transferencia">Transferencia</option>
+      </select>
+      <div style="margin-top: 1em;">
+        <button id="confirmar-pago" value="confirmar">Confirmar</button>
+        <button value="cancelar">Cancelar</button>
+      </div>
+    </form>
+  </dialog>
+</body>
+</html>
