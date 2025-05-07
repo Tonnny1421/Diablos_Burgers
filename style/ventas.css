@@ -55,7 +55,7 @@ header h2 {
   background: #ffffff;
   text-align: center;
   border-radius: 10px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
   transition: transform 0.2s ease;
 }
 .product:hover {
@@ -157,8 +157,7 @@ dialog select, dialog button {
   font-size: 16px;
 }
 
-
-dialog#dialogo-nota textarea{
+dialog#dialogo-nota textarea {
   font-family: 'Segoe UI', sans-serif;
   resize: none;
 }
