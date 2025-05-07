@@ -1,243 +1,346 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>POS Restaurante - Prototipo</title>
+    <title>Software para Diablos Burger</title>
     <link rel="stylesheet" href="../style/ventas.css" />
     <link rel="icon" type="image/png" href="../img/logo.png" />
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <h2>HAMBURGUESAS</h2>
+      <h2>HAMBURGUESAS</h2>
     </header>
     <div class="main">
-        <div class="left-panel">
-            <div>
-                <textarea class="display" id="display" rows="6" readonly></textarea>
-            </div>
-            <div class="controls">
-                <button id="nota-btn">Nota</button>
-            </div>
-            <button class="pago">Pago →</button>
+      <div class="left-panel">
+        <div>
+          <textarea class="display" id="display" rows="6" readonly></textarea>
+        </div>
+        <div class="controls">
+          <button id="nota-btn">Nota</button>
+        </div>
+        <button class="pago">Pago →</button>
+      </div>
+
+      <!-- INICIO DE AREA DE PRODUCTOS -->
+      <div class="right-panel">
+        <!-- HAMBURGUESAS -->
+        <h2>HAMBURGUESAS</h2>
+        <div class="product-grid">
+          <div class="product">
+            <img src="" alt="Hamburguesa Light" />
+            <p>Hamburguesa Light <br />$60</p>
+            <button class="agregar">agregar</button>
+            <button class="borrar">eliminar</button>
+          </div>
+          <div class="product">
+            <img src="" alt="Hamburguesa Sencilla" />
+            <p>Hamburguesa Diabla <br />$110</p>
+            <button class="agregar">agregar</button>
+            <button class="borrar">eliminar</button>
+          </div>
+          <div class="product">
+            <img src="" alt="Hamburguesa Hawaiana" />
+            <p>Hamburguesa Hawaiana <br />$90</p>
+            <button class="agregar">agregar</button>
+            <button class="borrar">eliminar</button>
+          </div>
+          <div class="product">
+            <img src="" alt="Hamburguesa Especial" />
+            <p>Hamburguesa Especial <br />$85</p>
+            <button class="agregar">agregar</button>
+            <button class="borrar">eliminar</button>
+          </div>
+          <div class="product">
+            <img src="" alt="Hamburguesa Pastor" />
+            <p>Hamburguesa Pastor <br />$95</p>
+            <button class="agregar">agregar</button>
+            <button class="borrar">eliminar</button>
+          </div>
+          <div class="product">
+            <img src="" alt="Hamburguesa Norteña" />
+            <p>Hamburguesa Norteña <br />$90</p>
+            <button class="agregar">agregar</button>
+            <button class="borrar">eliminar</button>
+          </div>
+          <div class="product">
+            <img src="" alt="Hamburguesa Super" />
+            <p>Hamburguesa Super <br />$92</p>
+            <button class="agregar">agregar</button>
+            <button class="borrar">eliminar</button>
+          </div>
+          <div class="product">
+            <img src="" alt="Hamburguesa Bufalo" />
+            <p>Hamburguesa Bufalo <br />$105</p>
+            <button class="agregar">agregar</button>
+            <button class="borrar">eliminar</button>
+          </div>
+          <div class="product">
+            <img src="" alt="Hamburguesa Diabla" />
+            <p>Hamburguesa Diabla <br />$97</p>
+            <button class="agregar">agregar</button>
+            <button class="borrar">eliminar</button>
+          </div>
+          <div class="product">
+            <img src="" alt="Hamburguesa Arrachera" />
+            <p>Hamburguesa Arrachera <br />$110</p>
+            <button class="agregar">agregar</button>
+            <button class="borrar">eliminar</button>
+          </div>
         </div>
 
-        <!-- INICIO DE AREA DE PRODUCTOS -->
-        <div class="right-panel">
-            <!-- HAMBURGUESAS -->
-            <h2>HAMBURGUESAS</h2>
-            <div class="product-grid">
-                <div class="product">
-                    <img src="" alt="Hamburguesa Light" />
-                    <p>Hamburguesa Light <br />$60</p>
-                    <button class="agregar">agregar</button>
-                    <button class="borrar">eliminar</button>
-                </div>
-                <div class="product">
-                    <img src="" alt="Hamburguesa Sencilla" />
-                    <p>Hamburguesa Diabla <br />$110</p>
-                    <button class="agregar">agregar</button>
-                    <button class="borrar">eliminar</button>
-                </div>
-                <div class="product">
-                    <img src="" alt="Hamburguesa Hawaiana" />
-                    <p>Hamburguesa Hawaiana <br />$90</p>
-                    <button class="agregar">agregar</button>
-                    <button class="borrar">eliminar</button>
-                </div>
-                <div class="product">
-                    <img src="" alt="Hamburguesa Especial" />
-                    <p>Hamburguesa Especial <br />$85</p>
-                    <button class="agregar">agregar</button>
-                    <button class="borrar">eliminar</button>
-                </div>
-                <div class="product">
-                    <img src="" alt="Hamburguesa Pastor" />
-                    <p>Hamburguesa Pastor <br />$95</p>
-                    <button class="agregar">agregar</button>
-                    <button class="borrar">eliminar</button>
-                </div>
-                <div class="product">
-                    <img src="" alt="Hamburguesa Norteña" />
-                    <p>Hamburguesa Norteña <br />$90</p>
-                    <button class="agregar">agregar</button>
-                    <button class="borrar">eliminar</button>
-                </div>
-                <div class="product">
-                    <img src="" alt="Hamburguesa Super" />
-                    <p>Hamburguesa Super <br />$92</p>
-                    <button class="agregar">agregar</button>
-                    <button class="borrar">eliminar</button>
-                </div>
-                <div class="product">
-                    <img src="" alt="Hamburguesa Bufalo" />
-                    <p>Hamburguesa Bufalo <br />$105</p>
-                    <button class="agregar">agregar</button>
-                    <button class="borrar">eliminar</button>
-                </div>
-                <div class="product">
-                    <img src="" alt="Hamburguesa Diabla" />
-                    <p>Hamburguesa Diabla <br />$97</p>
-                    <button class="agregar">agregar</button>
-                    <button class="borrar">eliminar</button>
-                </div>
-                <div class="product">
-                    <img src="" alt="Hamburguesa Arrachera" />
-                    <p>Hamburguesa Arrachera <br />$110</p>
-                    <button class="agregar">agregar</button>
-                    <button class="borrar">eliminar</button>
-                </div>
-            </div>
-
-            <!-- TORTAS -->
-            <h2>TORTAS</h2>
-            <div class="product-grid">
-                <div class="product">
-                    <img src="" alt="Torta Sencilla" />
-                    <p>Torta Sencilla <br />$90</p>
-                    <button class="agregar">agregar</button>
-                    <button class="borrar">eliminar</button>
-                </div>
-                <div class="product">
-                    <img src="" alt="Torta Especial" />
-                    <p>Torta Especial <br />$100</p>
-                    <button class="agregar">agregar</button>
-                    <button class="borrar">eliminar</button>
-                </div>
-                <div class="product">
-                    <img src="" alt="Torta Pastor" />
-                    <p>Torta Pastor <br />$98</p>
-                    <button class="agregar">agregar</button>
-                    <button class="borrar">eliminar</button>
-                </div>
-                <div class="product">
-                    <img src="" alt="Torta Chuleta" />
-                    <p>Torta Chuleta <br />$95</p>
-                    <button class="agregar">agregar</button>
-                    <button class="borrar">eliminar</button>
-                </div>
-                <div class="product">
-                    <img src="" alt="Torta Chavo" />
-                    <p>Torta Chavo <br />$55</p>
-                    <button class="agregar">agregar</button>
-                    <button class="borrar">eliminar</button>
-                </div>
-            </div>
-
-            <!-- HOT DOGS -->
-            <h2>HOT DOGS</h2>
-            <div class="product-grid">
-                <div class="product">
-                    <img src="../img/arr_bg.jpg" alt="Hot Dog" />
-                    <p>Hot Dog <br />$50</p>
-                    <button class="agregar">agregar</button>
-                    <button class="borrar">eliminar</button>
-                </div>
-            </div>
-
-            <!-- BEBIDAS -->
-            <h2>BEBIDAS</h2>
-            <div class="product-grid">
-                <div class="product">
-                    <img src="../img/arr_bg.jpg" alt="Refresco" />
-                    <p>Refresco <br />$20</p>
-                    <button class="agregar">agregar</button>
-                    <button class="borrar">eliminar</button>
-                </div>
-                <div class="product">
-                    <img src="../img/arr_bg.jpg" alt="Agua" />
-                    <p>Agua <br />$15</p>
-                    <button class="agregar">agregar</button>
-                    <button class="borrar">eliminar</button>
-                </div>
-            </div>
-
-            <!-- ACOMPAÑAMIENTOS -->
-            <h2>ACOMPAÑAMIENTOS</h2>
-            <div class="product-grid">
-                <div class="product">
-                    <img src="../img/arr_bg.jpg" alt="Papas Fritas" />
-                    <p>Papas Fritas <br />$30</p>
-                    <button class="agregar">agregar</button>
-                    <button class="borrar">eliminar</button>
-                </div>
-                <div class="product">
-                    <img src="../img/arr_bg.jpg" alt="Aros de Cebolla" />
-                    <p>Aros de Cebolla <br />$35</p>
-                    <button class="agregar">agregar</button>
-                    <button class="borrar">eliminar</button>
-                </div>
-            </div>
-
-            <!-- EXTRAS -->
-            <h2>EXTRAS</h2>
-            <div class="product-grid">
-                <div class="product">
-                    <img src="../img/arr_bg.jpg" alt="Salsa Extra" />
-                    <p>Salsa Extra <br />$10</p>
-                    <button class="agregar">agregar</button>
-                    <button class="borrar">eliminar</button>
-                </div>
-                <div class="product">
-                    <img src="../img/arr_bg.jpg" alt="Queso Extra" />
-                    <p>Queso Extra <br />$15</p>
-                    <button class="agregar">agregar</button>
-                    <button class="borrar">eliminar</button>
-                </div>
-            </div>
+        <!-- TORTAS -->
+        <h2>TORTAS</h2>
+        <div class="product-grid">
+          <div class="product">
+            <img src="" alt="Torta Sencilla" />
+            <p>Torta Sencilla <br />$90</p>
+            <button class="agregar">agregar</button>
+            <button class="borrar">eliminar</button>
+          </div>
+          <div class="product">
+            <img src="" alt="Torta Especial" />
+            <p>Torta Especial <br />$100</p>
+            <button class="agregar">agregar</button>
+            <button class="borrar">eliminar</button>
+          </div>
+          <div class="product">
+            <img src="" alt="Torta Pastor" />
+            <p>Torta Pastor <br />$98</p>
+            <button class="agregar">agregar</button>
+            <button class="borrar">eliminar</button>
+          </div>
+          <div class="product">
+            <img src="" alt="Torta Chuleta" />
+            <p>Torta Chuleta <br />$95</p>
+            <button class="agregar">agregar</button>
+            <button class="borrar">eliminar</button>
+          </div>
+          <div class="product">
+            <img src="" alt="Torta Chavo" />
+            <p>Torta Chavo <br />$55</p>
+            <button class="agregar">agregar</button>
+            <button class="borrar">eliminar</button>
+          </div>
         </div>
-        <!-- FIN DE AREA DE PRODUCTOS -->
+
+        <!-- HOT DOGS -->
+        <h2>HOT DOGS</h2>
+        <div class="product-grid">
+          <div class="product">
+            <img src="" alt="Hot Dog Sencillo" />
+            <p>Hot Dog Sencillo <br />$60</p>
+            <button class="agregar">agregar</button>
+            <button class="borrar">eliminar</button>
+          </div>
+          <div class="product">
+            <img src="" alt="Hot Dog Especial" />
+            <p>Hot Dog Especial <br />$70</p>
+            <button class="agregar">agregar</button>
+            <button class="borrar">eliminar</button>
+          </div>
+          <div class="product">
+            <img src="" alt="Hot Dog Chamuco" />
+            <p>Hot Dog Chamuco <br />$100</p>
+            <button class="agregar">agregar</button>
+            <button class="borrar">eliminar</button>
+          </div>
+        </div>
+
+        <!-- BEBIDAS -->
+        <h2>BEBIDAS</h2>
+        <div class="product-grid">
+          <div class="product">
+            <img src="" alt="Refresco" />
+            <p>Refresco <br />$20</p>
+            <button class="agregar">agregar</button>
+            <button class="borrar">eliminar</button>
+          </div>
+        </div>
+
+        <!-- ACOMPAÑAMIENTOS -->
+        <h2>ACOMPAÑAMIENTOS</h2>
+        <div class="product-grid">
+          <div class="product">
+            <img src="" alt="Papas Francesas" />
+            <p>Papas Francesa <br />$65</p>
+            <button class="agregar">agregar</button>
+            <button class="borrar">eliminar</button>
+          </div>
+          <div class="product">
+            <img src="" alt="Papanachos" />
+            <p>Papanachos <br />$75</p>
+            <button class="agregar">agregar</button>
+            <button class="borrar">eliminar</button>
+          </div>
+          <div class="product">
+            <img src="" alt="Papastor" />
+            <p>Papastor <br />$85</p>
+            <button class="agregar">agregar</button>
+            <button class="borrar">eliminar</button>
+          </div>
+          <div class="product">
+            <img src="" alt="Salchi Papas" />
+            <p>Salchipapas <br />$90</p>
+            <button class="agregar">agregar</button>
+            <button class="borrar">eliminar</button>
+          </div>
+          <div class="product">
+            <img src="" alt="Papaplote" />
+            <p>Papalote <br />$60</p>
+            <button class="agregar">agregar</button>
+            <button class="borrar">eliminar</button>
+          </div>
+          <div class="product">
+            <img src="" alt="Aros de cebolla" />
+            <p>Aros de Cebolla <br />$60</p>
+            <button class="agregar">agregar</button>
+            <button class="borrar">eliminar</button>
+          </div>
+          <div class="product">
+            <img src="" alt="Flautas" />
+            <p>Flautas <br />$60</p>
+            <button class="agregar">agregar</button>
+            <button class="borrar">eliminar</button>
+          </div>
+          <div class="product">
+            <img src="" alt="Nuggets" />
+            <p>Nuggets <br />$65</p>
+            <button class="agregar">agregar</button>
+            <button class="borrar">eliminar</button>
+          </div>
+        </div>
+
+        <!-- EXTRAS -->
+        <h2>EXTRAS</h2>
+<div class="product-grid">
+    <div class="product">
+        <img src="" alt="Carne extra" />
+        <p>Carne Extra <br />$32</p>
+        <button class="agregar">agregar</button>
+        <button class="borrar">eliminar</button>
+    </div>
+    <div class="product">
+        <img src="" alt="Carne de pastor" />
+        <p>Carne de pastor <br />$20</p>
+        <button class="agregar">agregar</button>
+        <button class="borrar">eliminar</button>
+    </div>
+    <div class="product">
+        <img src="" alt="Chuleta Ahumada" />
+        <p>Chuleta Ahumada <br />$10</p>
+        <button class="agregar">agregar</button>
+        <button class="borrar">eliminar</button>
+    </div>
+    <div class="product">
+        <img src="" alt="Salchicha para asar" />
+        <p>Salchicha para asar <br />$10</p>
+        <button class="agregar">agregar</button>
+        <button class="borrar">eliminar</button>
+    </div>
+    <div class="product">
+        <img src="" alt="Queso para Hamburguesa" />
+        <p>Queso para Hamburguesa <br />$10</p>
+        <button class="agregar">agregar</button>
+        <button class="borrar">eliminar</button>
+    </div>
+    <div class="product">
+        <img src="" alt="Tocino" />
+        <p>Tocino <br />$10</p>
+        <button class="agregar">agregar</button>
+        <button class="borrar">eliminar</button>
+    </div>
+    <div class="product">
+        <img src="" alt="Chorizo" />
+        <p>Chorizo <br />$10</p>
+        <button class="agregar">agregar</button>
+        <button class="borrar">eliminar</button>
+    </div>
+    <div class="product">
+        <img src="" alt="Piña" />
+        <p>Piña <br />$10</p>
+        <button class="agregar">agregar</button>
+        <button class="borrar">eliminar</button>
+    </div>
+    <div class="product">
+        <img src="" alt="Champiñones" />
+        <p>Champiñones <br />$10</p>
+        <button class="agregar">agregar</button>
+        <button class="borrar">eliminar</button>
+    </div>
+    <div class="product">
+        <img src="" alt="Aguacate" />
+        <p>Aguacate <br />$10</p>
+        <button class="agregar">agregar</button>
+        <button class="borrar">eliminar</button>
+    </div>
+    <div class="product">
+        <img src="" alt="Queso para Nachos" />
+        <p>Queso para Nachos <br />$10</p>
+        <button class="agregar">agregar</button>
+        <button class="borrar">eliminar</button>
+    </div>
+    <div class="product">
+        <img src="" alt="Salsa Bufalo" />
+        <p>Salsa Bufalo <br />$10</p>
+        <button class="agregar">agregar</button>
+        <button class="borrar">eliminar</button>
+    </div>
+</div>
+
+      </div>
+      <!-- FIN DE AREA DE PRODUCTOS -->
     </div>
     <script src="../js/ventas.js"></script>
     <dialog id="dialogo-pago">
-        <form method="dialog">
-            <!-- Dialogo para elegir método de pago -->
-            <h3>Total a pagar: <span id="monto-total"></span></h3>
-            <label for="metodo">Método de pago:</label>
-            <select id="metodo-pago" required>
-                <option value="tarjeta">Tarjeta</option>
-                <option value="efectivo">Efectivo</option>
-                <option value="transferencia">Transferencia</option>
-            </select>
+      <form method="dialog">
+        <!-- Dialogo para elegir método de pago -->
+        <h3>Total a pagar: <span id="monto-total"></span></h3>
+        <label for="metodo">Método de pago:</label>
+        <select id="metodo-pago" required>
+          <option value="tarjeta">Tarjeta</option>
+          <option value="efectivo">Efectivo</option>
+          <option value="transferencia">Transferencia</option>
+        </select>
 
-            <!-- Datos para transferencia -->
-            <div id="datos-transferencia" style="display: none;">
-                <p>Banco: BBVA</p>
-                <p>Nombre de la cuenta: Alicia Ramos</p>
-                <p>Referencia: 000000000</p>
-            </div>
+        <!-- Datos para transferencia -->
+        <div id="datos-transferencia" style="display: none">
+          <p>Banco: BBVA</p>
+          <p>Nombre de la cuenta: Alicia Ramos</p>
+          <p>Referencia: 000000000</p>
+        </div>
 
-            <!-- Pago con Efectivo -->
-            <div id="datos-efectivo" style="display: none;">
-                <label for="monto-pagado">Monto pagado:</label>
-                <input type="number" id="monto-pagado" step="0.01" />
-                <p id="cambio"></p>
-            </div>
-            <div style="margin-top: 1em">
-                <button id="confirmar-pago" value="confirmar">Confirmar</button>
-                <button value="cancelar">Cancelar</button>
-            </div>
-        </form>
+        <!-- Pago con Efectivo -->
+        <div id="datos-efectivo" style="display: none">
+          <label for="monto-pagado">Monto pagado:</label>
+          <input type="number" id="monto-pagado" step="0.01" />
+          <p id="cambio"></p>
+        </div>
+        <div style="margin-top: 1em">
+          <button id="confirmar-pago" value="confirmar">Confirmar</button>
+          <button value="cancelar">Cancelar</button>
+        </div>
+      </form>
     </dialog>
 
     <!-- Funcionamiento de agregar nota -->
     <dialog id="dialogo-nota">
-        <form method="dialog">
-            <label for="nota">Agregar nota:</label>
-            <textarea id="nota-textarea" rows="4"></textarea>
-            <div style="margin-top: 1em">
-                <button id="guardar-nota" value="guardar">Guardar</button>
-                <button value="cancelar">Cancelar</button>
-            </div>
-        </form>
+      <form method="dialog">
+        <label for="nota">Agregar nota:</label>
+        <textarea id="nota-textarea" rows="4"></textarea>
+        <div style="margin-top: 1em">
+          <button id="guardar-nota" value="guardar">Guardar</button>
+          <button value="cancelar">Cancelar</button>
+        </div>
+      </form>
     </dialog>
     <dialog id="dialogo-confirmacion">
-        <form method="dialog">
-            <h3 id="mensaje-confirmacion"></h3>
-            <div style="margin-top: 1em">
-                <button value="ok">OK</button>
-            </div>
-        </form>
+      <form method="dialog">
+        <h3 id="mensaje-confirmacion"></h3>
+        <div style="margin-top: 1em">
+          <button value="ok">OK</button>
+        </div>
+      </form>
     </dialog>
-</body>
+  </body>
 </html>

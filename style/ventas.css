@@ -143,21 +143,58 @@ header h2 {
 }
 
 /* Diálogo de pago */
-dialog#dialogo-pago {
+dialog {
   border: none;
   border-radius: 10px;
   padding: 20px;
   width: 300px;
   font-size: 16px;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
-dialog select, dialog button {
+dialog::backdrop {
+  background-color: rgba(0, 0, 0, 0.4); /* 40% de opacidad en negro */
+}
+
+dialog h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+dialog select, dialog button, dialog input, dialog textarea {
   width: 100%;
   padding: 10px;
   margin-top: 10px;
   font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
 
-dialog#dialogo-nota textarea {
-  font-family: 'Segoe UI', sans-serif;
+dialog button {
+  background-color: #0277BD;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+dialog button:hover {
+  background-color: #01579B;
+}
+
+dialog textarea {
   resize: none;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+dialog #datos-transferencia, dialog #datos-efectivo {
+  margin-top: 10px;
+}
+
+dialog #datos-transferencia p, dialog #datos-efectivo p {
+  margin: 5px 0;
+}
+
+dialog #cambio {
+  margin-top: 10px;
+  font-weight: bold;
 }
