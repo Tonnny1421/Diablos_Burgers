@@ -17,7 +17,7 @@
           <textarea class="display" id="display" rows="6" readonly></textarea>
         </div>
         <div class="controls">
-          <button>Nota</button>
+          <button id="nota-btn">Nota</button>
         </div>
         <button class="pago">Pago →</button>
       </div>
@@ -162,18 +162,55 @@
     <script src="../js/ventas.js"></script>
     <dialog id="dialogo-pago">
       <form method="dialog">
+
+        <!-- Dialogo para  elegir metodo de pago-->
         <h3>Total a pagar: <span id="monto-total"></span></h3>
         <label for="metodo">Método de pago:</label>
         <select id="metodo-pago" required>
-          <option value="efectivo">Efectivo</option>
           <option value="tarjeta">Tarjeta</option>
+          <option value="efectivo">Efectivo</option>
           <option value="transferencia">Transferencia</option>
         </select>
+
+        <!-- Datos para trnasferencia -->
+        <div id="datos-transferencia" style="display: none;">
+          <p>Banco: BBVA</p>
+          <p>Nombre de la cuenta: Alicia Ramos</p>
+          <p>Referencia: 000000000</p>
+        </div>
+
+        <!-- Pago con Efectivos -->
+        <div id="datos-efectivo" style="display: none;">
+          <label for="monto-pagado">Monto pagado:</label>
+          <input type="number" id="monto-pagado" step="0.01" />
+          <p id="cambio"></p>
+        </div>
         <div style="margin-top: 1em">
           <button id="confirmar-pago" value="confirmar">Confirmar</button>
           <button value="cancelar">Cancelar</button>
         </div>
       </form>
     </dialog>
+
+    <!-- Funcionamiento de agregar nota -->
+    <dialog id="dialogo-nota">
+      <form method="dialog">
+        <label for="nota">Agregar nota:</label>
+        <textarea id="nota-textarea" rows="4"></textarea>
+        <div style="margin-top: 1em">
+          <button id="guardar-nota" value="guardar">Guardar</button>
+          <button value="cancelar">Cancelar</button>
+        </div>
+      </form>
+    </dialog>
+    <dialog id="dialogo-confirmacion">
+      <form method="dialog">
+        <h3 id="mensaje-confirmacion"></h3>
+        <div style="margin-top: 1em">
+          <button value="ok">OK</button>
+        </div>
+      </form>
+    </dialog>
   </body>
 </html>
+

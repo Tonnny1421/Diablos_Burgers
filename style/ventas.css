@@ -110,7 +110,7 @@ header h2 {
   border: 1px solid #ccc;
 }
 
-/* Botones de control */
+/* Boton de Nota */
 .controls button {
   width: 100%;
   margin: 10px 0;
@@ -155,4 +155,10 @@ dialog select, dialog button {
   padding: 10px;
   margin-top: 10px;
   font-size: 16px;
+}
+
+
+dialog#dialogo-nota textarea{
+  font-family: 'Segoe UI', sans-serif;
+  resize: none;
 }
