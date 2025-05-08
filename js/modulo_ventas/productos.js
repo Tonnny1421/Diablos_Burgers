@@ -1,3 +1,4 @@
+import { mostrarTablaVentas } from './ventas.js';
 export const productosSeleccionados = {};
 let ventaId = 1;
 export const getVentaId = () => ventaId++;
@@ -17,6 +18,7 @@ export const inicializarProductos = (callback) => {
                 productosSeleccionados[nombreProducto] = { cantidad: 1, precio };
             }
             callback();
+            mostrarTablaVentas();
         });
 
         product.querySelector(".borrar").addEventListener("click", () => {
@@ -26,6 +28,7 @@ export const inicializarProductos = (callback) => {
                     delete productosSeleccionados[nombreProducto];
                 }
                 callback();
+                mostrarTablaVentas();
             }
         });
     });

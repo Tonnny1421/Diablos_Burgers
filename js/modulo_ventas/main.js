@@ -3,7 +3,7 @@ import { productosSeleccionados } from './productos.js';
 import { actualizarDisplay } from './display.js';
 import { manejarNotas } from './notas.js';
 import { configurarPagoUI } from './pagos.js';
-import { confirmarPago } from './ventas.js';
+import { confirmarPago, mostrarTablaVentas } from './ventas.js';
 
 document.addEventListener("DOMContentLoaded", () => {
     const display = document.getElementById("display");
@@ -39,5 +39,12 @@ document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("confirmar-pago").addEventListener("click", () => {
         const metodo = metodoPagoSelect.value;
         confirmarPago(metodo, total, mensajeConfirmacion, notaTextarea, montoPagadoInput, cambioSpan, display, dialogoPago, dialogoConfirmacion);
+        mostrarTablaVentas();
     });
+
+    // Comenta o elimina la siguiente línea para evitar limpiar el localStorage al recargar la página
+    // window.addEventListener('load', () => {
+    //     localStorage.clear();
+    // });
+    
 });
